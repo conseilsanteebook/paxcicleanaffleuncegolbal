@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Affluence Global</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --green:#22c55e;
+  --pink:#ec4899;
+  --dark:#0b1220;
+  --card:#111827;
+}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--dark);
+  color:white;
+  text-align:center;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:30px;
+  background:linear-gradient(135deg,#1e293b,var(--pink));
+}
+
+.hero-img{
+  width:100%;
+  max-width:700px;
+  border-radius:20px;
+  margin:15px auto;
+}
+
+.product{
+  background:var(--card);
+  padding:30px;
+  border-radius:20px;
+  margin:40px auto;
+  max-width:700px;
+}
+
+.slider{
+  max-width:350px;
+  margin:auto;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.slider img{
+  width:100%;
+  transition:opacity 0.5s;
+}
+
+.btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin:10px;
+  font-weight:bold;
+}
+
+.buy-btn{
+  background:linear-gradient(135deg,var(--pink),var(--green));
+  color:white;
+}
+
+.desc-btn{
+  background:#334155;
+  color:white;
+}
+
+.description {
+  display: none;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border-left: 4px solid var(--pink)
+}
+    .slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(236,72,153,0.3);
+}
+
+/* SLIDER IMAGE */
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+/* MODAL */
+.form-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  justify-content:center;
+  align-items:center;
+}
+
+.form-content{
+  background:white;
+  color:black;
+  padding:20px;
+  border-radius:15px;
+  width:90%;
+  max-width:350px;
+  position:relative;
+  border-left: 4px solid var(--pink)
+}
+
+.form-content input,
+.form-content textarea{
+  width:90%;
+  padding:8px;
+  margin-bottom:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.close-btn{
+  position:absolute;
+  right:10px;
+  top:10px;
+  background:red;
+  color:white;
+  border:none;
+  padding:5px 8px;
+  cursor:pointer;
+  border-radius: 20px;
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:white;
+}
+.navbar a{
+  color:var(--pink);
+  text-decoration:none;
+  margin-left:15px;
+  font-weight:bold;
+}
+
+.navbar a:hover{
+  color:var(--green);
+}
+
+footer{
+  padding:20px;
+  background:#020617;
+}
+  .flash-text{
+    animation: flash 2s infinites
+  }
+  @keyframes flash{
+    50%{
+      opacity:0;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="3.png" class="hero-img">
+  <img src="1.png" class="hero-img">
+   <marquee><p> Paxi Clean present Affluence Global Ltd is a health and wellness company offering high-quality nutrition and healthcare products. Their products are designed to improve health and well-being, using natural ingredients and scientifically proven formulas.
+
+Featured Products:
+- Double Red Rose: An antioxidant-rich dietary supplement designed to improve cardiovascular health and reduce signs of aging.
+- Café Boost: A nutrient-enhanced coffee to improve concentration and energy.
+- Weight Management: A weight management program based on natural ingredients and scientifically proven formulas.
+
+Benefits:
+- High-quality products made with natural ingredients and scientifically proven formulas.
+- A company committed to its customers' health and well-being.
+- Income opportunities for distributors and affiliates.
+
+You can find more information about their products and services on their website or by contacting their team.<p></marquee>
+</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div><strong>AFFLUENCE GLOBAL</strong></div>
+  <div>
+    <a href="2.html">About</a>
+    <a href="4.html">Contact</a>
+  </div>
+</div>
+<div class="product">
+  <h2>Double Red Rose</h2>
+
+  <div class="slider">
+    <img id="sliderImage" src="2.jpg">
+  </div>
+<div>⭐⭐⭐⭐🌟</div>
+  <h1 style="color:skyblue;">28.000 Fcfa</h1>
+  <h3><del>30.000 Fcfa</del></h3>
+
+  <button class="btn buy-btn flash-text" onclick="openForm()">Buy Now</button>
+  <button class="btn desc-btn" onclick="toggleDescription()">View Description</button>
+
+  <div class="description" id="productDesc">
+            <p>
+                A refreshing daily supplement crafted with a blend of red botanicals and superfruits<P></P>  —including red rose, goji berry, pomegranate, peach, jujube, grape, acerola cherry, red ginseng, lemon, roselle, carob, and locust honey.<P></P> 
+
+Rich in natural antioxidants, vitamins, and phytonutrients, Double Red Rose supports everyday wellbeing, energy, and vitality. The ingredients in this blend help protect cells from oxidative stress, support immune and skin health, and contribute to normal energy metabolism <P></P>— all while providing a delicious, naturally sweet taste.   </p>
+            <ul>
+                <li>✔ Innate Detoxifier / Cleanser</li>
+                <li>✔ Blood Sugar Control</li>
+                <li>✔ Cardiovascular Health</li>
+                <li>✔ Energy and Vitality</li>
+                <li>✔ General Body Wellbeing</li>
+                <li>✔ Skin Health</li>
+                <li>✔ Menstrual Health / Female Reptoductive Health</li>
+                <li>✔ Immune support</li>
+                <li>✔ Hydration</li>
+                <li>✔ Antioxidant Properties</li>
+                <li>✔ Anti-depressant / Improved Mood</li>
+            
+            </ul>
+        </div>
+</div>
+
+<!-- FORM MODAL -->
+<div class="form-modal" id="formModal">
+  <div class="form-content">
+    <button class="close-btn" onclick="closeForm()">X</button>
+    <h3 style="color:var(--pink);">Purchase Form</h3>
+
+    <input id="name" placeholder="Name">
+     <input id="email" placeholder="Email">
+    <input id="phone" placeholder="Phone">
+    <input id="city" placeholder="City">
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button type="button" class="btn buy-btn" onclick="envoyerWhatsApp()">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
+  <p style="color:var(--green)">
+    Affluence Global Ltd is a direct marketing and online sales company,
+    specializing in health and nutraceutical products.
+  </p>
+<footer>
+© 2026 Affluence Global | WhatsApp: +237 655 335 179 / +237 671 059 029</footer>
+
+<script>
+
+const WHATSAPP_NUMBER = "237655335179";
+
+/* SLIDER */
+const images = ["2.jpg","3.jpg","1.webp","4.jpeg","200.jpg"];
+let index = 0;
+
+setInterval(()=>{
+  const img = document.getElementById("sliderImage");
+  img.style.opacity = 0;
+
+  setTimeout(()=>{
+    index = (index+1)%images.length;
+    img.src = images[index];
+    img.style.opacity = 1;
+  },400);
+
+},3000);
+
+/* DESCRIPTION */
+function toggleDescription(){
+  const desc = document.getElementById("productDesc");
+  desc.style.display = desc.style.display==="block" ? "none" : "block";
+}
+
+/* OPEN FORM */
+function openForm(){
+  document.getElementById("formModal").style.display="flex";
+}
+
+/* CLOSE FORM */
+function closeForm(){
+  document.getElementById("formModal").style.display="none";
+}
+
+/* WHATSAPP SEND */
+function envoyerWhatsApp() {
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !phone) {
+    alert("Please enter your name and phone.");
+    return;
+  }
+
+  const texte =
+`Hello 👋, I would like to place an order Double Red Rose.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+city: ${city}
+Message: ${message}
+
+Price: 28.000 Fcfa`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texte)}`;
+
+  closeForm();
+
+  // ouverture sécurisée
+  window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>

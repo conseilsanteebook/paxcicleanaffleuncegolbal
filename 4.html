@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Affluence Global</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="img/png" href="100.jpeg">
+<style>
+:root {
+  --green: #22c55e;
+  --pink: #ec4899;
+  --dark: #0b1220;
+  --dark-card: #020617;
+  --grey: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dark);
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--grey), var(--pink));
+  padding: 30px;
+  text-align: center;
+}
+
+nav {
+  background: #111;
+  padding: 12px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { color: var(--green); }
+
+/* HERO IMAGE */
+.hero-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+/* SLIDER */
+.slider {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  transition: opacity 1s;
+}
+
+/* PRODUCT */
+.product {
+  background: var(--dark-card);
+  padding: 30px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+.buy-btn {
+  background: linear-gradient(135deg, var(--green), #16a34a);
+}
+.desc-btn {
+  background: linear-gradient(135deg, var(--pink), #db2777);
+  color: white;
+}
+
+/* DESCRIPTION */
+.description {
+  display: none;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border-left: 4px solid var(--pink)
+}
+
+/* FLASH */
+.flash-text {
+  animation: flash 2s infinite;
+}
+@keyframes flash {
+  50% { opacity: 0; }
+}
+
+/* MODAL */
+.form-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.form-content {
+  background: white;
+  padding: 20px;
+  border-radius: 29px;
+  max-width: 400px;
+  width: 90%;
+  border-left: 4px solid var(--green);
+}
+.form-content input, textarea {
+  width: 93%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 29px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+    .slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(236,72,153,0.3);
+}
+
+/* SLIDER IMAGE */
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+ header1{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      margin-bottom:4px;
+    }
+    .navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:White;
+}
+.navbar a{
+  color:var(--pink);
+  text-decoration:none;
+  margin-left:15px;
+  font-weight:bold;
+}
+
+.navbar a:hover{
+  color:var(--accent);
+}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#021018;font-size:18px;box-shadow:0 6px 20px rgba(11,18,32,0.6)
+    }
+    nav1{display:flex;gap:10px;align-items:center}
+
+a.btn1{background:var(--glass);padding:10px 14px;border-radius:12px;color:var(--muted);text-decoration:none;font-size:15px}
+    a.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021018;font-weight:300}
+
+    main{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#021018;font-size:18px;box-shadow:0 6px 20px rgba(11,18,32,0.6)
+    }
+     :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --accent:#17c3b2; /* turquoise */
+      --accent-2:#7b61ff; /* purple */
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      color-scheme: dark;
+    }
+</style>
+</head>
+
+<body>
+<header1>
+    <div class="brand">
+  
+    </div>
+  </header1>
+
+<header>
+  <img src="3.png" class="hero-img">
+  <img src="1.png"
+         alt="Affluence Global Banner"
+         class="hero-img">
+           <marquee>Affluence Global Ltd is a direct marketing and online sales company, primarily specializing in health and nutraceutical products. Based in Accra, Ghana, it operates via a partnership model, offering products delivered to homes or pickup points.</marquee>
+</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div><strong>AFFLUENCE GLOBAL</strong></div>
+  <div>
+    <a href="2.html">About</a>
+    <a href="index.html">Home</a></div></div>
+    
+<div class="product">
+  <h2>Contact Info:</h2>
+
+
+    <p></p>  <center>
+
+  <p></p>
+<div class="price" style="color:;"><h3>Email: <a href="paxcidsmbe123@gmail.com"> paxcidsmbe123@gmail.com</a></h3></div><p></p>
+<div class="price" style="color:;"><h3>Facebook: <a href="https://www.facebook.com/profile.php?id=61585220792520">Paxi Business Site</a></h3></div><p></p>
+<p></p><div class="price" style="color:yell0w;"><h3>Tel: +237 655 335 179</h3></div>
+    <p></p><div class="price" style="color:yell0w;"><h3>Tel: +237 671 059 029</h3></div>
+   
+ </center>
+</div>
+</body>
+
+<footer>© 2026 Affluence Global | WhatsApp:+237 655 335 179 / +237 671 059 029</footer>
+
+
+</html>
